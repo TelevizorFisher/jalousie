@@ -7,25 +7,25 @@ import {
 } from "../redux/product-reducer";
 
 let mapStateToProps = (state) => {
+  debugger;
   return {
-	 
     product: state.product.product,
   };
 };
 
 let mapDispatchToProps = (dispatch) => {
   return {
-	  
     addProd: () => {
       dispatch(addProdActionCreator());
     },
-    updateNewProdName: (name, count, weight, color, description) => {
+    updateNewProdName: (name, count, weight, color, description, foto) => {
       let action = updateNewProdTextActionCreator(
         name,
         count,
         weight,
         color,
-        description
+        description,
+        foto
       );
       dispatch(action);
     },

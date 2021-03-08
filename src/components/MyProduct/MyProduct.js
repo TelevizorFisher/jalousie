@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import ModalAdd from "../ModalAdd";
 import ModalAddContainer from "../ModalAddContainer";
 import Product from "./Product/Product";
 import s from "./Product/Product.module.scss";
 
 const MyProduct = (props) => {
-  useEffect(() => {
-    setProducts (props.product);
-  }, [props]);
-  const [products, setProducts] = useState(props.product);
 
-  console.log("масив ", products);
+  useEffect(() => {
+    setProducts(props.product);
+  }, [props]);
+  const [products, setProducts] = useState([]);
+
   let productElement = products.map((c) => (
     <Product
       id={c.id}
@@ -20,9 +19,10 @@ const MyProduct = (props) => {
       weight={c.weight}
       description={c.description}
       key={c.id}
-      one={c}
+      delid={c.id}
       products={products}
       setProducts={setProducts}
+
     />
   ));
 

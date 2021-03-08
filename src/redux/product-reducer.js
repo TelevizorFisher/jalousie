@@ -1,5 +1,7 @@
 const ADD_PROD = "ADD_PROD";
+const DELETE_PROD = "DELETE_PROD";
 const UPDATE_NEW_PROD = "UPDATE_NEW_PROD";
+const SORT_COUNT_PROD = "SORT_COUNT_PROD";
 
 let initialState = {
   product: [
@@ -77,15 +79,17 @@ const productReducer = (state = initialState, action) => {
         weight: state.newProdWeight,
         color: state.newProdColor,
         description: state.newProdDescr,
+        photo: state.newProdFoto,
       };
       return {
         ...state,
         product: [newProd, ...state.product],
-		  newProdName: "",
+        newProdName: "",
         newProdCount: "",
-		  newProdWeight: "",
+        newProdWeight: "",
         newProdColor: "",
-		  newProdDescr: "",
+        newProdDescr: "",
+        newProdFoto: "",
       };
     }
     case UPDATE_NEW_PROD: {
@@ -96,6 +100,13 @@ const productReducer = (state = initialState, action) => {
         newProdWeight: action.newWeight,
         newProdColor: action.newColor,
         newProdDescr: action.newDescr,
+        newProdFoto: action.newFoto,
+      };
+    }
+    case DELETE_PROD: {
+      return {
+        ...state,
+        product: state.product.filter((el) => el.id !== action.delid),
       };
     }
 
@@ -109,7 +120,8 @@ export const updateNewProdTextActionCreator = (
   count,
   weight,
   color,
-  description
+  description,
+  foto
 ) => ({
   type: UPDATE_NEW_PROD,
   newName: name,
@@ -117,6 +129,11 @@ export const updateNewProdTextActionCreator = (
   newWeight: weight,
   newColor: color,
   newDescr: description,
+  newFoto: foto,
+});
+export const deleteActionCreator = (delid) => ({
+  type: DELETE_PROD,
+  delid: delid,
 });
 
 export default productReducer;

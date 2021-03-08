@@ -20,6 +20,7 @@ let ModalAdd = (props) => {
   let newPostproductWeight = React.createRef();
   let newPostproductColor = React.createRef();
   let newPostproductDescr = React.createRef();
+  let newPostproductFoto = React.createRef();
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
@@ -39,7 +40,8 @@ let ModalAdd = (props) => {
     let weight = newPostproductWeight.current.value;
     let color = newPostproductColor.current.value;
     let description = newPostproductDescr.current.value;
-    props.updateNewProdName(name, count, weight, color, description);
+	 let foto = newPostproductFoto.current.value;
+    props.updateNewProdName(name, count, weight, color, description, foto);
   };
 
   return (
@@ -92,6 +94,12 @@ let ModalAdd = (props) => {
                   placeholder="Опис"
                   onChange={onNameChangeP}
                   ref={newPostproductDescr}
+                />
+					                 <input
+                  type="text"
+                  placeholder="Фото URL"
+                  onChange={onNameChangeP}
+                  ref={newPostproductFoto}
                 />
               </div>
             </form>

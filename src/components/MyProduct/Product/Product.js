@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import ModalDeleteButton from "../../Modal";
+import ModalDeleteButtonContainer from "../../ModalDeleteButtonContainer";
 import s from "./Product.module.scss";
 
 const Product = (props) => {
-  const [filteredProduct, setFilteredProduct] = useState([]);
-  console.log("pr", props.products);
-  const deleteHandler = () => {
-    props.setProducts(props.products.filter((el) => el.id !== props.one.id));
-  };
-
   return (
     <div>
       <div>
@@ -42,7 +36,7 @@ const Product = (props) => {
             </div>
           </div>
         </div>
-        <ModalDeleteButton deleteHandler={deleteHandler} />
+        <ModalDeleteButtonContainer delid={props.delid} />
       </div>
     </div>
   );

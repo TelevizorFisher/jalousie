@@ -28,6 +28,7 @@ let mapDispatchToProps = (dispatch) => {
       let action = updateNewPostNameActionCreator(name);
       dispatch(action);
     },
+
   };
 };
 

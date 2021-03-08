@@ -2,8 +2,12 @@ import React from "react";
 import ReactModal from "react-modal";
 import s from "./Modal.module.scss";
 
-let ModalDeleteButton = ({ deleteHandler }) => {
+let ModalDeleteButton = (props) => {
 
+  let deleteHandler = () => {
+    let delid = props.delid;
+    props.deleteProd(delid);
+  };
 
   const customStyles = {
     content: {
