@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import pages
 import Home from "./pages/Home";
@@ -11,16 +11,13 @@ import SingleProductContainer from "./components/MyProduct/Product/SingleProduct
 
 function App(props) {
   const [inputText, setInputText] = useState("");
-  const [product, setProduct] = useState([]);
-  const [filteredProduct, setFilteredProduct] = useState([]);
 
-  console.log("pr", { product });
   return (
     <Router>
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Home store={props.store} product={product} setProduct={setProduct} />
+          <Home store={props.store} />
         </Route>
         <Route path="/about">
           <About />

@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import MyPostsContainer from "../../Profile/MyPosts/MyPostsContainer";
 import Product from "./Product";
 import s from "./SingleProduct.module.scss";
 
@@ -51,6 +52,7 @@ function SingleProduct(props) {
         back home
       </Link>
       {content}
+		<MyPostsContainer/> 
     </section>
   );
 }

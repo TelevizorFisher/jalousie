@@ -1,8 +1,10 @@
 import { combineReducers, createStore } from "redux";
 import productReducer from "./product-reducer";
+import profileReducer from "./profile-reducer";
 
 let reducers = combineReducers({
   product: productReducer,
+  profile: profileReducer,
 });
 
 /* eslint-disable no-underscore-dangle */

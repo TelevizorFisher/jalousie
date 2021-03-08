@@ -1,3 +1,6 @@
+const ADD_PROD = "ADD_PROD";
+const UPDATE_NEW_PROD = "UPDATE_NEW_PROD";
+
 let initialState = {
   product: [
     {
@@ -61,22 +64,59 @@ let initialState = {
       description: "Товар в чудовому стані",
     },
   ],
-  Comment: [
-    {
-      id: 3,
-      productId: 1,
-      description: "some text here",
-    },
-    {
-      id: 3,
-      productId: 1,
-      description: "some text here",
-    },
-  ],
 };
 
 const productReducer = (state = initialState, action) => {
-  return state;
+  debugger;
+  switch (action.type) {
+    case ADD_PROD: {
+      let newProd = {
+        id: Math.random() * 1000,
+        name: state.newProdName,
+        count: state.newProdCount,
+        weight: state.newProdWeight,
+        color: state.newProdColor,
+        description: state.newProdDescr,
+      };
+      return {
+        ...state,
+        product: [newProd, ...state.product],
+		  newProdName: "",
+        newProdCount: "",
+		  newProdWeight: "",
+        newProdColor: "",
+		  newProdDescr: "",
+      };
+    }
+    case UPDATE_NEW_PROD: {
+      return {
+        ...state,
+        newProdName: action.newName,
+        newProdCount: action.newCount,
+        newProdWeight: action.newWeight,
+        newProdColor: action.newColor,
+        newProdDescr: action.newDescr,
+      };
+    }
+
+    default:
+      return state;
+  }
 };
+export const addProdActionCreator = () => ({ type: ADD_PROD });
+export const updateNewProdTextActionCreator = (
+  name,
+  count,
+  weight,
+  color,
+  description
+) => ({
+  type: UPDATE_NEW_PROD,
+  newName: name,
+  newCount: count,
+  newWeight: weight,
+  newColor: color,
+  newDescr: description,
+});
 
 export default productReducer;

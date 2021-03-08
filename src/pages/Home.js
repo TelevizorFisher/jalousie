@@ -5,7 +5,7 @@ export default function Home(props) {
   return (
     <main>
       <SearchForm2 store={props.store} />
-      <MyProductContainer store={props.store}/>
+      <MyProductContainer store={props.store} />
     </main>
   );
 }

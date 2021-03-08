@@ -1,0 +1,72 @@
+const ADD_POST = "ADD-POST";
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+const UPDATE_NEW_POST_NAME = "UPDATE_NEW_POST_NAME";
+
+let initialState = {
+  posts: [
+    {
+      id: 1,
+      name: "Василь",
+      message:
+        "Замовляла ролет майже півроку тому. Прийшов вчасно. Запакований надійно. Всі запчастини наявні. Все відповідає дійсності. Дякую компанії і менеджерам.",
+    },
+    {
+      id: 2,
+      name: "Степан",
+      message:
+        "Заказав через день відправили. Якість дуже гарна. Буду заказувати ще...",
+    },
+    {
+      id: 3,
+      name: "Люба",
+      message:
+        "Заказав через день відправили. Якість дуже гарна. Буду заказувати ще...",
+    },
+  ],
+  newPostText: "Повідомлення...",
+  newPostName: "Імя",
+};
+
+const profileReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_POST: {
+      let newPost = {
+        id: 5,
+        name: state.newPostName,
+        message: state.newPostText,
+      };
+      return {
+        ...state,
+        posts: [newPost, ...state.posts],
+        newPostText: "",
+        newPostName: "",
+      };
+    }
+    case UPDATE_NEW_POST_TEXT: {
+      return {
+        ...state,
+        newPostText: action.newText,
+      };
+    }
+    case UPDATE_NEW_POST_NAME: {
+      return {
+        ...state,
+        newPostName: action.newName,
+      };
+    }
+    default:
+      return state;
+  }
+};
+
+export const addPostActionCreator = () => ({ type: ADD_POST });
+export const updateNewPostTextActionCreator = (text) => ({
+  type: UPDATE_NEW_POST_TEXT,
+  newText: text,
+});
+export const updateNewPostNameActionCreator = (name) => ({
+  type: UPDATE_NEW_POST_NAME,
+  newName: name,
+});
+
+export default profileReducer;
