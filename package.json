@@ -2,7 +2,7 @@
   "name": "reminder",
   "version": "0.1.0",
   "private": true,
-  "hommepage": "https://televizorfisher.github.io/React-Prod/",
+  "homepage": "https://televizorfisher.github.io/React-Prod/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
