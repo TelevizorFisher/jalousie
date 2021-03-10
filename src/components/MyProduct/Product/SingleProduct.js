@@ -1,16 +1,13 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import ModalAddSingleContainer from "../../ModalAddSingleContainer";
 import MyPostsContainer from "../../Profile/MyPosts/MyPostsContainer";
-import Product from "./Product";
+
 import s from "./SingleProduct.module.scss";
 
 function SingleProduct(props) {
-  console.log(console.log(window.location.pathname));
   var el = window.location.pathname;
   var id = parseInt(el.match(/\d+/));
-  console.log("id", id);
-  console.log("id", props.id);
-
   const content = props.product.map((p) =>
     p.id === id ? (
       <section className="section cocktail-section">
@@ -24,19 +21,19 @@ function SingleProduct(props) {
           </div>
           <div className="drink-info">
             <p>
-              <span className="drink-data">name :</span> {p.name}
+              <span className="drink-data">Назва :</span> {p.name}
             </p>
             <p>
-              <span className="drink-data">count :</span> {p.count}
-            </p>
-				<p>
-              <span className="drink-data">color :</span> {p.color}
-            </p>
-				<p>
-              <span className="drink-data">Weight :</span> {p.weight}
+              <span className="drink-data">Кількість:</span> {p.count}
             </p>
             <p>
-              <span className="drink-data">instructons :</span> {p.description}
+              <span className="drink-data">Колір :</span> {p.color}
+            </p>
+            <p>
+              <span className="drink-data">Вага :</span> {p.weight}
+            </p>
+            <p>
+              <span className="drink-data">Опис :</span> {p.description}
             </p>
           </div>
         </div>
@@ -52,7 +49,9 @@ function SingleProduct(props) {
         back home
       </Link>
       {content}
-		<MyPostsContainer/> 
+      <span className="section-title">Редагувати продукт</span>{" "}
+      <ModalAddSingleContainer />
+      <MyPostsContainer />
     </section>
   );
 }

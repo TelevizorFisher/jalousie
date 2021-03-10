@@ -2,7 +2,7 @@ import React from "react";
 import ReactModal from "react-modal";
 import s from "./Modal.module.scss";
 
-let ModalAdd = (props) => {
+let ModalAddSingle = (props) => {
   const customStyles = {
     content: {
       top: "50%",
@@ -11,14 +11,12 @@ let ModalAdd = (props) => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      zIndex: "100",
     },
-
   };
-  const myStyles = {
-	  zIndex: "100",
-}
-  var subtitle;
+
+  var el = window.location.pathname;
+  var id = parseInt(el.match(/\d+/));
+
   let newPostproductName = React.createRef();
   let newPostproductCount = React.createRef();
   let newPostproductWeight = React.createRef();
@@ -35,8 +33,8 @@ let ModalAdd = (props) => {
   function closeModal() {
     setIsOpen(false);
   }
-  let onAddProd = () => {
-    props.addProd();
+  let onUpdateProd = () => {
+    props.updateProd();
   };
   let onNameChangeP = () => {
     let name = newPostproductName.current.value;
@@ -45,11 +43,12 @@ let ModalAdd = (props) => {
     let color = newPostproductColor.current.value;
     let description = newPostproductDescr.current.value;
     let foto = newPostproductFoto.current.value;
-    props.updateNewProdName(name, count, weight, color, description, foto);
+	 let productId = id;
+    props.updateProdName(name, count, weight, color, description, foto, productId);
   };
 
   return (
-    <div style={myStyles} className={s.portfolio__bodyModal}>
+    <div className={s.portfolio__bodyModal}>
       <div className={s.portfolio__circleBody}>
         <span onClick={openModal} className={s.portfolio__circle}></span>
       </div>
@@ -60,7 +59,7 @@ let ModalAdd = (props) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Редактор товарів</h2>
+        <h2 >Редактор товару</h2>
         <div className={s.coment_body}>
           <div className={s.coment_form}>
             <form className="decor">
@@ -111,7 +110,7 @@ let ModalAdd = (props) => {
           </div>
         </div>
         <div className={s.portfolio__body}>
-          <span className={s.portfolio__buttonDel} onClick={onAddProd}>
+          <span className={s.portfolio__buttonDel} onClick={onUpdateProd}>
             Зберегти
           </span>
           <span className={s.portfolio__buttonDel} onClick={closeModal}>
@@ -123,4 +122,4 @@ let ModalAdd = (props) => {
   );
 };
 
-export default ModalAdd;
+export default ModalAddSingle;

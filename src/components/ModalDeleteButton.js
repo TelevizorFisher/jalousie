@@ -5,8 +5,8 @@ import s from "./Modal.module.scss";
 let ModalDeleteButton = (props) => {
 
   let deleteHandler = () => {
-    let delid = props.delid;
-    props.deleteProd(delid);
+    let deleteId = props.deleteId;
+    props.deleteProd(deleteId);
   };
 
   const customStyles = {
@@ -19,7 +19,7 @@ let ModalDeleteButton = (props) => {
       transform: "translate(-50%, -50%)",
     },
   };
-  var subtitle;
+
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
@@ -43,7 +43,7 @@ let ModalDeleteButton = (props) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>
+        <h2 >
           Ви дійсно бажаєте видалити товар?
         </h2>
         <div className={s.portfolio__body}>

@@ -7,7 +7,7 @@ import {
 } from "../redux/product-reducer";
 
 let mapStateToProps = (state) => {
-  debugger;
+
   return {
     product: state.product.product,
   };

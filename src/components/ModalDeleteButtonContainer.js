@@ -11,8 +11,8 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
   return {
-    deleteProd: (delid) => {
-      let action = deleteActionCreator(delid);
+    deleteProd: (deleteId) => {
+      let action = deleteActionCreator(deleteId);
       dispatch(action);
     },
   };

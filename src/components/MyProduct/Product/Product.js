@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import ModalDeleteButtonContainer from "../../ModalDeleteButtonContainer";
 import s from "./Product.module.scss";
@@ -23,7 +23,7 @@ const Product = (props) => {
                   Кількість товару - {props.count}
                 </div>
                 <div className={s.portfolio__text_weight}>
-                  <div>{props.weight}</div>
+                  <div>Вага - {props.weight}</div>
                 </div>
               </div>
               <NavLink
@@ -36,7 +36,7 @@ const Product = (props) => {
             </div>
           </div>
         </div>
-        <ModalDeleteButtonContainer delid={props.delid} />
+        <ModalDeleteButtonContainer deleteId={props.deleteId} />
       </div>
     </div>
   );

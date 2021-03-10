@@ -2,15 +2,16 @@ $color: #8b2fe1ac;
 $Mcolor: #46b6a0;
 .portfolio {
   &__circleBody {
-    margin: 20px 0px 0px 0px;
+    margin: 51px 0px 51px 0px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+	 cursor: pointer;
   }
   &__circle {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: relative;
     background: $Mcolor;
     &:hover {
@@ -28,7 +29,7 @@ $Mcolor: #46b6a0;
     top: 50%;
     left: 5px;
     right: 5px;
-    z-index: 9;
+
     &:hover::after {
       background: $Mcolor;
       transition: background 0.3s;
@@ -45,7 +46,7 @@ $Mcolor: #46b6a0;
     left: 50%;
     top: 5px;
     bottom: 5px;
-    z-index: 9;
+
     &:hover::before {
       background: $Mcolor;
       transition: background 0.3s;
@@ -56,11 +57,10 @@ $Mcolor: #46b6a0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    z-index: 10;
   }
   &__body {
     position: relative;
-    z-index: 10;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,11 +100,12 @@ $Mcolor: #46b6a0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px 1b0px 0px;
+  margin: 10px 0px 10px 0px;
+  overflow-x: hidden;
 }
 .coment_form {
   margin: 30px 0px 30px 0px;
-  width: 300px;
+  width: 400px;
   min-height: 400px;
   border-radius: 50px;
 }
@@ -192,7 +193,7 @@ $Mcolor: #46b6a0;
 .form_inner textarea {
   resize: none;
 }
-.form_inner h3 {
+.form_inner {
   margin-top: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -206,7 +207,6 @@ $Mcolor: #46b6a0;
   align-items: center;
   position: relative;
   text-align: center;
-  z-index: 5;
   margin-top: 10px;
   font-size: 10px;
   padding: 3px;

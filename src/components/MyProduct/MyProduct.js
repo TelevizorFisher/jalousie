@@ -4,7 +4,12 @@ import Product from "./Product/Product";
 import s from "./Product/Product.module.scss";
 
 const MyProduct = (props) => {
-
+  let SortCountHandler = () => {
+    props.SortCountProd();
+  };
+  let SortNameHandler = () => {
+	props.SortNameProd();
+ };
   useEffect(() => {
     setProducts(props.product);
   }, [props]);
@@ -19,10 +24,9 @@ const MyProduct = (props) => {
       weight={c.weight}
       description={c.description}
       key={c.id}
-      delid={c.id}
+      deleteId={c.id}
       products={products}
       setProducts={setProducts}
-
     />
   ));
 
@@ -34,6 +38,15 @@ const MyProduct = (props) => {
           Додати товар
           <ModalAddContainer store={props.store} />
         </span>
+        <div>
+          {" "}
+          <span className={s.portfolio__buttonDel} onClick={SortNameHandler}>
+            Сортувати за назвою
+          </span>{" "}
+          <span className={s.portfolio__buttonDel} onClick={SortCountHandler}>
+            Сортувати за кількістю
+          </span>
+        </div>
       </div>
     </div>
   );

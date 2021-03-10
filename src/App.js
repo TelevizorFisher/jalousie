@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import pages
 import Home from "./pages/Home";
@@ -6,11 +6,11 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 // import components
 import Navbar from "./components/Navbar";
-import SingleProduct from "./components/MyProduct/Product/SingleProduct";
+
 import SingleProductContainer from "./components/MyProduct/Product/SingleProductContainer";
 
 function App(props) {
-  const [inputText, setInputText] = useState("");
+
 
   return (
     <Router>
