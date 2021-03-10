@@ -3,7 +3,6 @@ import ReactModal from "react-modal";
 import s from "./Modal.module.scss";
 
 let ModalDeleteButton = (props) => {
-
   let deleteHandler = () => {
     let deleteId = props.deleteId;
     props.deleteProd(deleteId);
@@ -43,9 +42,7 @@ let ModalDeleteButton = (props) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 >
-          Ви дійсно бажаєте видалити товар?
-        </h2>
+        <h2>Ви дійсно бажаєте видалити товар?</h2>
         <div className={s.portfolio__body}>
           {" "}
           <span className={s.portfolio__buttonDel} onClick={deleteHandler}>

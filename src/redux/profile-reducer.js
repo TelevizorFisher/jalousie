@@ -6,25 +6,31 @@ let initialState = {
   posts: [
     {
       id: 1,
-		productId: 1,
+      productId: 1,
       name: "Василь",
       message:
         "Замовляла ролет майже півроку тому. Прийшов вчасно. Запакований надійно. Всі запчастини наявні. Все відповідає дійсності. Дякую компанії і менеджерам.",
-		  
     },
     {
       id: 2,
-		productId: 2,
+      productId: 2,
       name: "Степан",
       message:
         "Заказав через день відправили. Якість дуже гарна. Буду заказувати ще...",
     },
     {
       id: 3,
-		productId: 3,
+      productId: 3,
       name: "Люба",
       message:
         "Заказав через день відправили. Якість дуже гарна. Буду заказувати ще...",
+    },
+    {
+      id: 4,
+      productId: 4,
+      name: "Віра",
+      message:
+        "Заказала, а вже через день відправили. Якість дуже гарна. Буду заказувати ще...",
     },
   ],
   newPostText: "",
@@ -32,13 +38,11 @@ let initialState = {
 };
 
 const profileReducer = (state = initialState, action) => {
-
   switch (action.type) {
-	
     case ADD_POST: {
       let newPost = {
         id: 5,
-		  productId: state.productId,
+        productId: state.productId,
         name: state.newPostName,
         message: state.newPostText,
       };
@@ -53,8 +57,7 @@ const profileReducer = (state = initialState, action) => {
       return {
         ...state,
         newPostText: action.newText,
-		  productId: action.productId,
-		 
+        productId: action.productId,
       };
     }
     case UPDATE_NEW_POST_NAME: {
@@ -73,7 +76,6 @@ export const updateNewPostTextActionCreator = (text, productId) => ({
   type: UPDATE_NEW_POST_TEXT,
   newText: text,
   productId: productId,
-  
 });
 
 export const updateNewPostNameActionCreator = (name) => ({

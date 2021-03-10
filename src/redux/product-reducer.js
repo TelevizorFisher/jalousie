@@ -106,8 +106,8 @@ const productReducer = (state = initialState, action) => {
       };
     }
     case DELETE_PROD: {
-		 debugger
-		 let Id = action.deleteId;
+      debugger;
+      let Id = action.deleteId;
       return {
         ...state,
         product: state.product.filter((el) => el.id !== Id),

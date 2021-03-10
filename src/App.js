@@ -10,8 +10,6 @@ import Navbar from "./components/Navbar";
 import SingleProductContainer from "./components/MyProduct/Product/SingleProductContainer";
 
 function App(props) {
-
-
   return (
     <Router>
       <Navbar />
