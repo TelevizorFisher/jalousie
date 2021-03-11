@@ -13,9 +13,9 @@ let ModalAddSingle = (props) => {
       transform: "translate(-50%, -50%)",
     },
   };
-
-  var el = window.location.pathname;
-  var id = parseInt(el.match(/\d+/));
+  var hash = window.location.hash.substr(1);
+  // var el = window.location.pathname;
+  var id = parseInt(hash.match(/\d+/));
 
   let newPostproductName = React.createRef();
   let newPostproductCount = React.createRef();
@@ -43,8 +43,16 @@ let ModalAddSingle = (props) => {
     let color = newPostproductColor.current.value;
     let description = newPostproductDescr.current.value;
     let foto = newPostproductFoto.current.value;
-	 let productId = id;
-    props.updateProdName(name, count, weight, color, description, foto, productId);
+    let productId = id;
+    props.updateProdName(
+      name,
+      count,
+      weight,
+      color,
+      description,
+      foto,
+      productId
+    );
   };
 
   return (
@@ -59,7 +67,7 @@ let ModalAddSingle = (props) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 >Редактор товару</h2>
+        <h2>Редактор товару</h2>
         <div className={s.coment_body}>
           <div className={s.coment_form}>
             <form className="decor">

@@ -3,8 +3,9 @@ import s from "./MyPosts.module.scss";
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-  var el = window.location.pathname;
-  var id = parseInt(el.match(/\d+/));
+  //var el = window.location.pathname;
+  var hash = window.location.hash.substr(1);
+  var id = parseInt(hash.match(/\d+/));
   var comments = props.posts.filter((e) => e.productId === id);
   let postsElements = comments.map((p) => (
     <Post name={p.name} message={p.message} />
@@ -19,7 +20,7 @@ const MyPosts = (props) => {
 
   let onPostChange = () => {
     let text = newPostElementT.current.value;
-	 let productId = id;
+    let productId = id;
     props.updateNewPostText(text, productId);
   };
 

@@ -28,6 +28,6 @@ export default function Navbar() {
 }
 
 const Style = {
-  width: "130px",
+  width: "120px",
   height: "70px",
 };

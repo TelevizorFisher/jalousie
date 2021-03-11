@@ -6,8 +6,10 @@ import MyPostsContainer from "../../Profile/MyPosts/MyPostsContainer";
 import s from "./SingleProduct.module.scss";
 
 function SingleProduct(props) {
-  var el = window.location.pathname;
-  var id = parseInt(el.match(/\d+/));
+  var hash = window.location.hash.substr(1);
+  console.log("hash", hash);
+  // var el = window.location.pathname;
+  var id = parseInt(hash.match(/\d+/));
   const content = props.product.map((p) =>
     p.id === id ? (
       <section className="section cocktail-section">

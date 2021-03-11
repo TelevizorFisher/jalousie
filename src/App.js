@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Switch,
+} from "react-router-dom";
 // import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,7 +16,7 @@ import SingleProductContainer from "./components/MyProduct/Product/SingleProduct
 
 function App(props) {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <Switch>
         <Route exact path="/">
@@ -27,7 +32,7 @@ function App(props) {
           <Error />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
