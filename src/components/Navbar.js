@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.jpg";
+import logo2 from "../logo3.png";
 
 export default function Navbar() {
   return (
@@ -9,7 +9,7 @@ export default function Navbar() {
         <Link to="/">
           <img
             style={Style}
-            src={logo}
+            src={logo2}
             alt="cocktail db logo"
             className="logo"
           />
@@ -21,6 +21,9 @@ export default function Navbar() {
           <li>
             <Link to="/about">about</Link>
           </li>
+          <li>
+            <Link to="/order">Order</Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -28,6 +31,7 @@ export default function Navbar() {
 }
 
 const Style = {
-  width: "120px",
-  height: "70px",
+  padding: "7px 0px 0px 0px",
+  width: "155px",
+  height: "95px",
 };

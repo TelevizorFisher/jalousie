@@ -1,10 +1,12 @@
 import { combineReducers, createStore } from "redux";
 import productReducer from "./product-reducer";
 import profileReducer from "./profile-reducer";
+import finalFormReducer from './form-reduser'
 
 let reducers = combineReducers({
   product: productReducer,
   profile: profileReducer,
+  finalForm: finalFormReducer,
 });
 
 /* eslint-disable no-underscore-dangle */

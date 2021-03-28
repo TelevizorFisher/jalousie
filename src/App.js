@@ -13,6 +13,7 @@ import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
 
 import SingleProductContainer from "./components/MyProduct/Product/SingleProductContainer";
+import Order from "./pages/Order";
 
 function App(props) {
   return (
@@ -24,6 +25,9 @@ function App(props) {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/order">
+          <Order />
         </Route>
         <Route path="/product/:id">
           <SingleProductContainer store={props.store} />

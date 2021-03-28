@@ -67,6 +67,10 @@ a {
 img {
   width: 100%;
   display: block;
+  vertical-align: top;
+}
+li {
+  list-style: none;
 }
 
 /* 
@@ -138,7 +142,10 @@ Navbar
   align-items: center;
   border-bottom: 2px solid var(--primaryColor);
   box-shadow: var(--lightShadow);
+  background: url("../../jalousie/src/fon.jpg") 0 0 no-repeat;
+  background-size: cover;
 }
+
 .nav-center {
   display: flex;
   justify-content: space-between;
@@ -158,12 +165,13 @@ Navbar
   margin-right: 0.5rem;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 0.25rem 0.5rem;
   transition: var(--mainTransition);
+  color: rgb(5, 62, 28);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: #44a400;
 }
 .logo {
   width: 12rem;
