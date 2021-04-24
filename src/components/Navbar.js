@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo2 from "../logo3.png";
+import logo2 from "../logoSun.png";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="">
       <div className="nav-center">
         <Link to="/">
           <img
@@ -32,6 +32,6 @@ export default function Navbar() {
 
 const Style = {
   padding: "7px 0px 0px 0px",
-  width: "155px",
-  height: "95px",
+  width: "140px",
+  height: "85px",
 };

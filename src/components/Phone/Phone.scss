@@ -1,0 +1,52 @@
+.phone {
+  &__body {
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: url("../HeaderInfo/img/phone_24px.svg") center no-repeat;
+    background-size: 70px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.183);
+    transition: 0.5s ease;
+    &:hover {
+      background: #f8828a;
+      box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2),
+        0px 8px 16px rgba(38, 38, 38, 0.24);
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Segoe UI";
+
+    text-align: center;
+    color: #fff;
+    transition: 0.5s ease;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-sckroll {
+  max-height: 100vh;
+  overflow: auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: calc(100vh - 60px);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+}

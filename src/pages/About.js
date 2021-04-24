@@ -1,4 +1,5 @@
 import React from "react";
+import Phone from "../components/Phone/Phone";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
         nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione
         hic aspernatur error blanditiis?
       </p>
+      <Phone />
     </section>
   );
 }

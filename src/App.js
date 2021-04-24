@@ -14,10 +14,14 @@ import Navbar from "./components/Navbar";
 
 import SingleProductContainer from "./components/MyProduct/Product/SingleProductContainer";
 import Order from "./pages/Order";
+import HeaderInfo from "./components/HeaderInfo/HeaderInfo";
+import Phone from "./components/Phone/Phone";
 
 function App(props) {
   return (
     <HashRouter>
+
+      <HeaderInfo />
       <Navbar />
       <Switch>
         <Route exact path="/">
