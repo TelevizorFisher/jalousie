@@ -1,3 +1,9 @@
+$minwidth: 320px;
+$mw: 1024;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
 /* 
 ====== 
 Variables 
@@ -15,6 +21,8 @@ Variables
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
+  --main: #f8828a;
+  --mainText: #373737;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.3rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -76,12 +84,29 @@ a {
 img {
   width: 100%;
   display: block;
-  vertical-align: top;
 }
 li {
   list-style: none;
 }
-
+i {
+  font-size: 16px;
+}
+.container {
+  max-width: $mw + px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: $md1+px) {
+    max-width: 980px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
 /* 
 ====== 
 Buttons 
@@ -168,7 +193,6 @@ Navbar
   align-items: center;
 }
 .nav-links a {
-  text-transform: capitalize;
   display: inline-block;
   font-weight: bold;
   margin-right: 0.5rem;
@@ -180,7 +204,7 @@ Navbar
   color: #373737;
 }
 .nav-links a:hover {
-  color: #44a400;
+  color: var(--main);
 }
 .logo {
   width: 12rem;
@@ -192,7 +216,7 @@ About
 */
 .about-section {
   width: var(--smallWidth);
-  max-width: var(--maxWidth);
+
   margin: 0 auto;
 }
 .about-section p {
@@ -230,20 +254,7 @@ Cocktails List
   margin-bottom: 3.5rem;
   margin-top: 1rem;
 }
-.cocktails-center {
-  width: var(--smallWidth);
-  margin: 0 auto;
-  max-width: var(--fullWidth);
-  display: grid;
-  row-gap: 2rem;
-  column-gap: 2rem;
-  /* align-items: start; */
-}
-@media screen and (min-width: 576px) {
-  .cocktails-center {
-    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
-  }
-}
+
 /* 
 ====== 
 Cocktail 

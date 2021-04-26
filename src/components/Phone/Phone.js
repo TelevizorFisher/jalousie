@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReactModal from "react-modal";
 import "../Phone/Phone.scss";
+import { useStore } from "../../store-zustand/store";
+import { Tooltip } from "react-tippy";
+import "react-tippy/dist/tippy.css";
 
 const customStyles = {
   content: {
@@ -28,8 +31,17 @@ const myStylesCLose = {
 };
 
 export default function Phone() {
+  const ModalChange = useStore((state) => state.ModalChange);
+  const modalOpen = useStore((state) => state.modalOpen);
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  /*   if (Modal == true) {
+    openModal();
+  } */
   function openModal() {
+    setIsOpen(true);
+  }
+
+  if (modalOpen) {
     setIsOpen(true);
   }
 
@@ -42,9 +54,26 @@ export default function Phone() {
 
   return (
     <div className="phone__body">
-      <span onClick={openModal} className="phone__text">
-        Звяжіться з нами
-      </span>
+      <Tooltip
+        position="top"
+        trigger="mouseenter"
+        arrow="true"
+        arrowSize="big"
+        size="big"
+        distance="20"
+        theme="transparent"
+        duration="1000"
+        html={
+          <div className="phone__informations">
+            Натисніть, щоб ми вам зателефонували!
+          </div>
+        }
+      >
+        <span onClick={openModal} className="phone__text">
+          Звяжіться з нами
+        </span>
+      </Tooltip>
+
       <ReactModal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}

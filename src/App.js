@@ -16,11 +16,11 @@ import SingleProductContainer from "./components/MyProduct/Product/SingleProduct
 import Order from "./pages/Order";
 import HeaderInfo from "./components/HeaderInfo/HeaderInfo";
 import Phone from "./components/Phone/Phone";
+import Footer from "./components/Footer/Footer";
 
 function App(props) {
   return (
     <HashRouter>
-
       <HeaderInfo />
       <Navbar />
       <Switch>
@@ -40,6 +40,7 @@ function App(props) {
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </HashRouter>
   );
 }

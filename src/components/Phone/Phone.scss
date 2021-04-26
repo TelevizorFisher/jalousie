@@ -20,6 +20,7 @@
     }
   }
   &__text {
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +37,12 @@
       cursor: pointer;
     }
   }
+  &__informations {
+  }
 }
 
 .form-sckroll {
-  max-height: 100vh;
+  max-height: 700px;
   overflow: auto;
   overflow-y: scroll;
   scrollbar-width: none;

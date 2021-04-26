@@ -1,10 +1,12 @@
 import React from "react";
 import Phone from "../components/Phone/Phone";
+import Tabs from "../components/Tabs/Tabs";
 
 export default function About() {
   return (
     <section className="section about-section">
-      <h1 className="section-title">about us</h1>
+      <h1 className="section-title">Про нас</h1>
+		<Tabs/>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
         repudiandae architecto qui adipisci in officiis, aperiam sequi atque

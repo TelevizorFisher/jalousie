@@ -1,13 +1,15 @@
 import React from "react";
+import { openModalActionCreator } from "../redux/modal-reduser";
 import "./Order.scss";
 
 const myStyles = {
   display: "none",
 };
 
+
 export default function Order() {
   return (
-    <>
+    <section className="section">
       <div className="form">
         <form
           name="myForm"
@@ -90,11 +92,7 @@ export default function Order() {
               </label>
             </div>
           </div> */}
-          <button
-            type="submit"
-            value="Send"
-            className="form__button"
-          >
+          <button type="submit" value="Send" className="form__button">
             Отправить
           </button>
         </form>
@@ -107,6 +105,6 @@ export default function Order() {
       >
         Завантаження…
       </iframe>
-    </>
+    </section>
   );
 }

@@ -15,8 +15,7 @@ $md4: 479.98;
   }
 }
 .menu {
-  &__body {
-  }
+
   &__list {
     display: flex;
     justify-content: flex-end;
@@ -38,7 +37,6 @@ $md4: 479.98;
     }
   }
   &__clock {
-
     margin: 0px 5px 0px 5px;
     display: none;
     height: 15px;
@@ -119,4 +117,5 @@ $md4: 479.98;
   height: 24px;
   background: url("../HeaderInfo/img/phone_24px.svg") left no-repeat;
   background-size: contain;
+  cursor: pointer;
 }

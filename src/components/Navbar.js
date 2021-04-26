@@ -16,13 +16,17 @@ export default function Navbar() {
         </Link>
         <ul className="nav-links">
           <li>
-            <Link to="/">home</Link>
+            <Link to="/">Головна</Link>
+            <i className="icon-call-back"></i>
           </li>
           <li>
-            <Link to="/about">about</Link>
+            <Link to="/about">Про нас</Link>
           </li>
           <li>
-            <Link to="/order">Order</Link>
+            <Link to="/works">Наші роботи</Link>
+          </li>
+          <li>
+            <Link to="/order">Замовлення</Link>
           </li>
         </ul>
       </div>

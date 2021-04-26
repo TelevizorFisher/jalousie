@@ -5,8 +5,10 @@ import Phone from "../components/Phone/Phone";
 export default function Home(props) {
   return (
     <main>
-      <MyProductContainer store={props.store} />
-      <Phone/>
+      <div className="container">
+        <MyProductContainer store={props.store} />
+        <Phone />
+      </div>
     </main>
   );
 }
