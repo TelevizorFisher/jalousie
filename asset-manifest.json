@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/TelevizorFisher/jalousie/static/css/main.75aedb94.chunk.css",
-    "main.js": "/TelevizorFisher/jalousie/static/js/main.0fdcb785.chunk.js",
-    "main.js.map": "/TelevizorFisher/jalousie/static/js/main.0fdcb785.chunk.js.map",
+    "main.css": "/TelevizorFisher/jalousie/static/css/main.9b2769a0.chunk.css",
+    "main.js": "/TelevizorFisher/jalousie/static/js/main.282d9f08.chunk.js",
+    "main.js.map": "/TelevizorFisher/jalousie/static/js/main.282d9f08.chunk.js.map",
     "runtime-main.js": "/TelevizorFisher/jalousie/static/js/runtime-main.80c37c47.js",
     "runtime-main.js.map": "/TelevizorFisher/jalousie/static/js/runtime-main.80c37c47.js.map",
-    "static/js/2.9bab29b9.chunk.js": "/TelevizorFisher/jalousie/static/js/2.9bab29b9.chunk.js",
-    "static/js/2.9bab29b9.chunk.js.map": "/TelevizorFisher/jalousie/static/js/2.9bab29b9.chunk.js.map",
+    "static/css/2.e22355b1.chunk.css": "/TelevizorFisher/jalousie/static/css/2.e22355b1.chunk.css",
+    "static/js/2.16f7779e.chunk.js": "/TelevizorFisher/jalousie/static/js/2.16f7779e.chunk.js",
+    "static/js/2.16f7779e.chunk.js.map": "/TelevizorFisher/jalousie/static/js/2.16f7779e.chunk.js.map",
     "index.html": "/TelevizorFisher/jalousie/index.html",
-    "precache-manifest.9052eac2eca10284e9948300cd3d3e6b.js": "/TelevizorFisher/jalousie/precache-manifest.9052eac2eca10284e9948300cd3d3e6b.js",
+    "precache-manifest.4f523abb2155a07ce7bb89232f11bc27.js": "/TelevizorFisher/jalousie/precache-manifest.4f523abb2155a07ce7bb89232f11bc27.js",
     "service-worker.js": "/TelevizorFisher/jalousie/service-worker.js",
-    "static/css/main.75aedb94.chunk.css.map": "/TelevizorFisher/jalousie/static/css/main.75aedb94.chunk.css.map",
-    "static/js/2.9bab29b9.chunk.js.LICENSE.txt": "/TelevizorFisher/jalousie/static/js/2.9bab29b9.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/TelevizorFisher/jalousie/static/media/FonGreen.69fe1804.jpg",
+    "static/css/2.e22355b1.chunk.css.map": "/TelevizorFisher/jalousie/static/css/2.e22355b1.chunk.css.map",
+    "static/css/main.9b2769a0.chunk.css.map": "/TelevizorFisher/jalousie/static/css/main.9b2769a0.chunk.css.map",
+    "static/js/2.16f7779e.chunk.js.LICENSE.txt": "/TelevizorFisher/jalousie/static/js/2.16f7779e.chunk.js.LICENSE.txt",
     "static/media/HeaderInfo.scss": "/TelevizorFisher/jalousie/static/media/phone_24px.444ff4f4.svg",
-    "static/media/logoSun.png": "/TelevizorFisher/jalousie/static/media/logoSun.a4a29faf.png"
+    "static/media/Footer.scss": "/TelevizorFisher/jalousie/static/media/logoSun.a4a29faf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.80c37c47.js",
-    "static/js/2.9bab29b9.chunk.js",
-    "static/css/main.75aedb94.chunk.css",
-    "static/js/main.0fdcb785.chunk.js"
+    "static/css/2.e22355b1.chunk.css",
+    "static/js/2.16f7779e.chunk.js",
+    "static/css/main.9b2769a0.chunk.css",
+    "static/js/main.282d9f08.chunk.js"
   ]
 }
