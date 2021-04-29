@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/TelevizorFisher/jalousie/static/css/main.b25cf329.chunk.css",
-    "main.js": "/TelevizorFisher/jalousie/static/js/main.e1587107.chunk.js",
-    "main.js.map": "/TelevizorFisher/jalousie/static/js/main.e1587107.chunk.js.map",
-    "runtime-main.js": "/TelevizorFisher/jalousie/static/js/runtime-main.80c37c47.js",
-    "runtime-main.js.map": "/TelevizorFisher/jalousie/static/js/runtime-main.80c37c47.js.map",
-    "static/css/2.e22355b1.chunk.css": "/TelevizorFisher/jalousie/static/css/2.e22355b1.chunk.css",
-    "static/js/2.0ba6d6fb.chunk.js": "/TelevizorFisher/jalousie/static/js/2.0ba6d6fb.chunk.js",
-    "static/js/2.0ba6d6fb.chunk.js.map": "/TelevizorFisher/jalousie/static/js/2.0ba6d6fb.chunk.js.map",
-    "index.html": "/TelevizorFisher/jalousie/index.html",
-    "precache-manifest.0e5a1fea40a28dc87312399322b80747.js": "/TelevizorFisher/jalousie/precache-manifest.0e5a1fea40a28dc87312399322b80747.js",
-    "service-worker.js": "/TelevizorFisher/jalousie/service-worker.js",
-    "static/css/2.e22355b1.chunk.css.map": "/TelevizorFisher/jalousie/static/css/2.e22355b1.chunk.css.map",
-    "static/css/main.b25cf329.chunk.css.map": "/TelevizorFisher/jalousie/static/css/main.b25cf329.chunk.css.map",
-    "static/js/2.0ba6d6fb.chunk.js.LICENSE.txt": "/TelevizorFisher/jalousie/static/js/2.0ba6d6fb.chunk.js.LICENSE.txt",
-    "static/media/HeaderInfo.scss": "/TelevizorFisher/jalousie/static/media/phone.6774a16f.png",
-    "static/media/Footer.scss": "/TelevizorFisher/jalousie/static/media/social-3.817d585a.png"
+    "main.css": "/jalousie/static/css/main.9301e8cd.chunk.css",
+    "main.js": "/jalousie/static/js/main.e1587107.chunk.js",
+    "main.js.map": "/jalousie/static/js/main.e1587107.chunk.js.map",
+    "runtime-main.js": "/jalousie/static/js/runtime-main.9cb2c2f0.js",
+    "runtime-main.js.map": "/jalousie/static/js/runtime-main.9cb2c2f0.js.map",
+    "static/css/2.e22355b1.chunk.css": "/jalousie/static/css/2.e22355b1.chunk.css",
+    "static/js/2.cb7326bc.chunk.js": "/jalousie/static/js/2.cb7326bc.chunk.js",
+    "static/js/2.cb7326bc.chunk.js.map": "/jalousie/static/js/2.cb7326bc.chunk.js.map",
+    "index.html": "/jalousie/index.html",
+    "precache-manifest.eb6001d37f9d81dbaf43cb3be3b3f182.js": "/jalousie/precache-manifest.eb6001d37f9d81dbaf43cb3be3b3f182.js",
+    "service-worker.js": "/jalousie/service-worker.js",
+    "static/css/2.e22355b1.chunk.css.map": "/jalousie/static/css/2.e22355b1.chunk.css.map",
+    "static/css/main.9301e8cd.chunk.css.map": "/jalousie/static/css/main.9301e8cd.chunk.css.map",
+    "static/js/2.cb7326bc.chunk.js.LICENSE.txt": "/jalousie/static/js/2.cb7326bc.chunk.js.LICENSE.txt",
+    "static/media/HeaderInfo.scss": "/jalousie/static/media/phone.6774a16f.png",
+    "static/media/Footer.scss": "/jalousie/static/media/social-3.817d585a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.80c37c47.js",
+    "static/js/runtime-main.9cb2c2f0.js",
     "static/css/2.e22355b1.chunk.css",
-    "static/js/2.0ba6d6fb.chunk.js",
-    "static/css/main.b25cf329.chunk.css",
+    "static/js/2.cb7326bc.chunk.js",
+    "static/css/main.9301e8cd.chunk.css",
     "static/js/main.e1587107.chunk.js"
   ]
 }
