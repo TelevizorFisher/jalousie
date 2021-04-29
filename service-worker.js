@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TelevizorFisher/jalousie/precache-manifest.4f523abb2155a07ce7bb89232f11bc27.js"
+  "/TelevizorFisher/jalousie/precache-manifest.0e5a1fea40a28dc87312399322b80747.js"
 );
 
 self.addEventListener('message', (event) => {
