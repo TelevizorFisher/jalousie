@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./TF-drop.css";
+import "../../scss/TF-drop.scss";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { displayPartsToString } from "typescript";
 import { Tooltip } from "react-tippy";
@@ -17,63 +17,48 @@ export default class FDrop extends React.Component {
 
   render() {
     return (
-      <div class="dropdown">
+      <div className="dropdown">
         <input style={Style} value={this.state.value} />
-        <CopyToClipboard
-          className="menu__link-1 _goto-block"
-          text={this.state.value}
-          onCopy={() => this.setState({ copied: true })}
-        >
-          <Tooltip
-            position="left"
-            trigger="mouseenter "
-            arrow="true"
-            inertia="true"
-            html={
-              <div
-                style={{
-                  color: "#fff",
-                }}
-              >
-                Натисніть, щоб скопіювати
-              </div>
-            }
+        <div className="menu__link-1 _goto-block">
+          <CopyToClipboard
+            text={this.state.value}
+            onCopy={() => this.setState({ copied: true })}
           >
-            <span> +380954756441</span>
-          </Tooltip>
-        </CopyToClipboard>
-        {/* 1 */}
-        <div class="dropdown-content">
+            <Tooltip
+              position="left"
+              trigger="mouseenter "
+              arrow="true"
+              inertia="true"
+              theme="light"
+              html={<div>Натисніть, щоб скопіювати</div>}
+            >
+              <span> +380954756441</span>
+            </Tooltip>
+          </CopyToClipboard>
+        </div>
+        <div className="dropdown-content">
           <input style={Style} value={this.state.value1} />
           <CopyToClipboard
-            className="menu__link-1 "
             text={this.state.value1}
             onCopy={() => this.setState({ copied: true })}
           >
             <a> {this.state.value1}</a>
           </CopyToClipboard>
-          {/* 2 */}
           <input style={Style} value={this.state.value2} />
           <CopyToClipboard
-            className="menu__link-1 "
             text={this.state.value2}
             onCopy={() => this.setState({ copied: true })}
           >
             <a> {this.state.value2}</a>
           </CopyToClipboard>
-          {/* 3 */}
           <input style={Style} value={this.state.value3} />
           <CopyToClipboard
-            className="menu__link-1 "
             text={this.state.value3}
             onCopy={() => this.setState({ copied: true })}
           >
             <a> {this.state.value3}</a>
           </CopyToClipboard>
         </div>
-        {this.state.copied ? (
-          <span style={{ color: "red", position: "absolute" }}>Copied.</span>
-        ) : null}
       </div>
     );
   }

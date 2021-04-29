@@ -1,6 +1,7 @@
+$mainColor: #f87321;
+
 .phone {
   &__body {
-    display: flex;
     z-index: 100;
     position: fixed;
     bottom: 15px;
@@ -8,13 +9,18 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background: url("../HeaderInfo/img/phone_24px.svg") center no-repeat;
+    background: url("../img-main/img-header/phone.png") center no-repeat;
     background-size: 70px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.183);
     transition: 0.5s ease;
     &:hover {
-      background: #f8828a;
+      background: rgb(230, 150, 6);
+      background: linear-gradient(
+        90deg,
+        rgba(228, 157, 25, 0.986) 0%,
+        rgb(255, 94, 0) 100%
+      );
       box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2),
         0px 8px 16px rgba(38, 38, 38, 0.24);
     }
@@ -38,6 +44,8 @@
     }
   }
   &__informations {
+    font-size: 20px;
+    color: $mainColor;
   }
 }
 

@@ -6,6 +6,9 @@ export default function Home(props) {
   return (
     <main>
       <div className="container">
+        <div className="title">
+          <span>Головна</span>
+        </div>
         <MyProductContainer store={props.store} />
         <Phone />
       </div>

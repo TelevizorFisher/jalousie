@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReactModal from "react-modal";
-import "../Phone/Phone.scss";
+import "../../scss/Phone.scss";
 import { useStore } from "../../store-zustand/store";
 import { Tooltip } from "react-tippy";
 import "react-tippy/dist/tippy.css";

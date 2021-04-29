@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.scss";
+import "../../scss/Footer.scss";
 
 export default function Footer() {
   return (
@@ -45,7 +45,8 @@ export default function Footer() {
     </footer> */
 
     <footer className="footer">
-      <div className="container">
+      <hr />
+      <div className="container-footer">
         <div className="footer__body">
           <div className="footer__logo-body">
             <div className="left-f__logo"></div>
@@ -81,19 +82,9 @@ export default function Footer() {
                     <span>Замовлення</span>
                   </a>
                 </li>
-                <li>
-                  <a href="" className="menu-colum__link">
-                    <span>Gallery</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="" className="menu-colum__link">
-                    <span>Contact</span>
-                  </a>
-                </li>
               </ul>
             </div>
-            <div className="footer__menu-colum">
+            {/*             <div className="footer__menu-colum">
               <ul className="menu-colum__list">
                 <li>
                   <a href="" className="menu-colum__link Services-line">
@@ -121,7 +112,7 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className="footer__menu-colum">
               <ul className="menu-colum__list">
                 <li>
@@ -131,12 +122,12 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="" className="menu-colum__link">
-                    <span>contact@lop.com</span>
+                    <span>SUNriseLviv@gmail.com</span>
                   </a>
                 </li>
                 <li>
                   <a href="" className="menu-colum__link">
-                    <span>856 - 693 - 456</span>
+                    <span>+380954756441</span>
                   </a>
                 </li>
               </ul>
@@ -153,14 +144,13 @@ export default function Footer() {
                 <span className="list-icon__one"></span>
                 <span className="list-icon__two"></span>
                 <span className="list-icon__three"></span>
-                <span className="list-icon__four"></span>
-                <span className="list-icon__five"></span>
+                <span className="list-icon__foure"></span>
               </div>
             </div>
           </div>
         </div>
         <div href="" className="c-text">
-          <span>© 2019 Lopper by mariuszdaniel. All right reserved.</span>
+          <span>© 2021 SunriseLviv. Всі права захищені .</span>
         </div>
       </div>
     </footer>

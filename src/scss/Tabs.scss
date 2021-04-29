@@ -3,8 +3,10 @@
 Variables
 ===============
 */
-
+$mainGreyColor: #5d5e5f;
+$mainColor: #ff6200;
 :root {
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
@@ -49,19 +51,23 @@ Variables
   --fixed-width: 920px;
 }
 
-.container-grid{
+.container-grid {
   width: 90vw;
   margin: 5rem auto;
-  background: var(--clr-white);
-  border-radius: var(--radius);
+  margin-top: 0px;
+  background-color: $mainGreyColor;
+  border-radius: 0.25rem;
   padding: 2.5rem 2rem;
   max-width: var(--fixed-width);
   display: grid;
   gap: 1rem 2rem;
+  box-shadow: var(--lightShadow);
 }
-.container-grid h3 {
+.container-grid div {
   line-height: 1.2;
   font-weight: 500;
+  font-size: 23px;
+  color: #fff;
 }
 @media screen and (min-width: 992px) {
   .container-grid {
@@ -70,6 +76,7 @@ Variables
   }
 }
 .question {
+  background-color: #fff;
   padding: 1rem 1.5rem;
   border: 2px solid var(--clr-grey-special);
   margin-bottom: 1rem;
@@ -103,7 +110,7 @@ Variables
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--main);
+  color: $mainColor;
   cursor: pointer;
   margin-left: 1rem;
   align-self: center;

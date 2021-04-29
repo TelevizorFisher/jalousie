@@ -1,6 +1,6 @@
 import React from "react";
 import ReactModal from "react-modal";
-import s from "./Modal.module.scss";
+import s from "../scss/Modal.module.scss";
 
 let ModalAdd = (props) => {
   const customStyles = {
@@ -13,11 +13,10 @@ let ModalAdd = (props) => {
       transform: "translate(-50%, -50%)",
       zIndex: "101",
     },
-
   };
   const myStyles = {
-	  zIndex: "100",
-}
+    zIndex: "100",
+  };
   var subtitle;
   let newPostproductName = React.createRef();
   let newPostproductCount = React.createRef();

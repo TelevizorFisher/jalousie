@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo2 from "../../logoSun.png";
+import logo2 from "../../img-main/logoSun.png";
 import { useStore } from "../../store-zustand/store";
-import "../HeaderInfo/HeaderInfo.scss";
+import "../../scss/HeaderInfo.scss";
 import TFDrop from "./TF-drop";
 
 export default function HeaderInfo() {
@@ -23,13 +23,15 @@ export default function HeaderInfo() {
                 </a>
               </li>
               <li>
+                <div className="list-icon-header">
+                  <span className="list-icon__one"></span>
+                  <span className="list-icon__two"></span>
+                  <span className="list-icon__three"></span>
+                  <span className="list-icon__foure"></span>
+                </div>
+              </li>
+              <li>
                 <TFDrop />
-              </li>
-              <li>
-                <a className="menu__clock"></a>
-              </li>
-              <li>
-                <a className="menu__phone"></a>
               </li>
               <li>
                 <a href="#lots" className="_goto-block"></a>

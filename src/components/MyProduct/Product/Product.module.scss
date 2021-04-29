@@ -2,17 +2,15 @@ $color: #8b2fe1ac;
 $Mcolor: #46b6a0;
 //======portfolio==========//
 .portfolio {
-  
-
   &__body {
     display: flex;
-    margin: 15px 15px 10px 15px;
+    margin: 0px 15px 10px 15px;
     justify-content: space-around;
     flex-wrap: wrap;
   }
   &__cart_body {
     display: flex;
-    margin: 15px 15px 10px 15px;
+    margin: 0px 15px 10px 15px;
     height: 300px;
     max-width: 300px;
     background-color: rebeccapurple;
@@ -34,7 +32,7 @@ $Mcolor: #46b6a0;
   }
   &__cartAdd {
     position: relative;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,16 +112,16 @@ $Mcolor: #46b6a0;
     color: yellowgreen;
   }
   &__text_weight {
-	font-size: 18px;
-	color: yellowgreen;
- }
+    font-size: 18px;
+    color: yellowgreen;
+  }
   &__button {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     text-align: center;
-z-index: 1;
+    z-index: 1;
     margin-top: 10px;
     font-size: 20px;
     padding: 3px;

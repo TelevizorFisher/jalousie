@@ -2,11 +2,11 @@ $color: #8b2fe1ac;
 $Mcolor: #46b6a0;
 .portfolio {
   &__circleBody {
-    margin: 51px 0px 51px 0px;
+    margin: 51px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-	 cursor: pointer;
+    cursor: pointer;
   }
   &__circle {
     border-radius: 50%;

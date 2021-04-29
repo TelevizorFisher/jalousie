@@ -1,10 +1,9 @@
-
-
+$mainColor: #f87321;
 .left-f {
   &__logo {
     width: 300px;
-    height: px;
-    background: url("../../logoSun.png") 0 0 no-repeat;
+    height: 80px;
+    background: url("../img-main/logoSun.png") 0 0 no-repeat;
     background-size: contain;
   }
 }
@@ -26,7 +25,7 @@
   }
   &__logo-body {
     flex: 0 0 300px;
-    margin: 126px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     @media (max-width: 1010px) {
       flex: 1 1 100%;
       margin: 0px 0px 0px 0px;
@@ -53,13 +52,13 @@
     @include flexbox();
     justify-content: space-between;
     flex: 1 1 auto;
-    margin: 126px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     @media (max-width: 600px) {
       flex: 1 0 auto;
       flex-wrap: wrap;
     }
     @media (max-width: 1010px) {
-      margin: 30px 0px 0px 0px;
+      margin: 15px 0px 0px 0px;
     }
   }
   &__menu-colum {
@@ -101,9 +100,9 @@
   &:after {
     content: "";
     display: block;
-    width: 54px;
+    width: 56px;
     height: 1px;
-    background: #f61067;
+    background: $mainColor;
   }
 }
 .Services-line {
@@ -115,7 +114,7 @@
     display: block;
     width: 103px;
     height: 1px;
-    background: #f61067;
+    background: $mainColor;
   }
 }
 .Contact-line {
@@ -126,9 +125,9 @@
     text-align: center;
     content: "";
     display: block;
-    width: 135px;
+    width: 133px;
     height: 1px;
-    background: #f61067;
+    background: $mainColor;
   }
 }
 .Follow-line {
@@ -139,9 +138,9 @@
     text-align: center;
     content: "";
     display: block;
-    width: 122px;
+    width: 118px;
     height: 1px;
-    background: #f61067;
+    background: $mainColor;
   }
 }
 .footer-bg {
@@ -161,8 +160,20 @@
 }
 .menu-colum {
   &__list-icon {
-    a {
-      margin: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    span {
+      width: 25px;
+      height: 25px;
+      margin: 10px 0px 0px 0px;
+      background-size: cover;
+      display: inline-block;
+      cursor: pointer;
+    }
+    span:first-child {
+      margin: 0px 0px;
     }
   }
 }
@@ -177,20 +188,15 @@
 }
 .list-icon {
   &__one {
-    width: 16px;
-    height: 16px;
-    background: url("../Footer/img/social-1.png") center no-repeat;
+    background: url("../img-main/img-footer/social-5.png") center no-repeat;
   }
   &__two {
-    background: url("../Footer/img/social-2.png") center no-repeat;
+    background: url("../img-main/img-footer/social-2.png") center no-repeat;
   }
   &__three {
-    background: url("../Footer/img/social-3.png") center no-repeat;
+    background: url("../img-main/img-footer/social-3.png") center no-repeat;
   }
-  &__four {
-    background: url("../Footer/img/social-4.png") center no-repeat;
-  }
-  &__five {
-    background: url("../Footer/img/social-5.png") center no-repeat;
+  &__foure {
+    background: url("../img-main/img-footer/social-1.png") center no-repeat;
   }
 }

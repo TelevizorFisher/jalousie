@@ -1,6 +1,6 @@
 import React from "react";
 import ReactModal from "react-modal";
-import s from "./Modal.module.scss";
+import s from "../scss/Modal.module.scss";
 
 let ModalAddSingle = (props) => {
   const customStyles = {

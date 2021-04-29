@@ -68,6 +68,36 @@ let initialState = {
       color: "green",
       description: "Товар в чудовому стані",
     },
+    {
+      id: 7,
+      name: "Жалюзі",
+      photo:
+        "https://polves.com.ua/content/vertikalnye-zhaljuzi.jpg.pagespeed.ce.5TkQXiqR-w.jpg",
+      count: "1",
+      weight: "200g",
+      color: "green",
+      description: "Товар в чудовому стані",
+    },
+    {
+      id: 8,
+      name: "Жалюзі",
+      photo:
+        "https://polves.com.ua/content/vertikalnye-zhaljuzi.jpg.pagespeed.ce.5TkQXiqR-w.jpg",
+      count: "1",
+      weight: "200g",
+      color: "green",
+      description: "Товар в чудовому стані",
+    },
+    {
+      id: 9,
+      name: "Римські шторки",
+      photo:
+        "https://sunny-tm.com/image/cache/catalog/new5/art1/rimskie-shtory-top-653.jpg",
+      count: "6",
+      weight: "150g",
+      color: "green",
+      description: "Товар в чудовому стані",
+    },
   ],
 };
 

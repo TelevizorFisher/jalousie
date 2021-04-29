@@ -33,7 +33,7 @@ const MyProduct = (props) => {
   return (
     <div className={s.portfolio__body}>
       {productElement}
-      <div className={s.portfolio__cartAdd}>
+{/*       <div className={s.portfolio__cartAdd}>
         <span>
           Додати товар
           <ModalAddContainer store={props.store} />
@@ -47,7 +47,7 @@ const MyProduct = (props) => {
             Сортувати за кількістю
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

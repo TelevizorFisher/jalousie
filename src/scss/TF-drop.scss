@@ -16,7 +16,9 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background: url("../../FonGreen.jpg") 0 0 no-repeat;
+  margin: 0px 0px 0px 20px;
+  /*   background: url("../../img/FonGreen.jpg") 0 0 no-repeat; */
+  background-color: #5d5e5f;
   background-size: cover;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -26,10 +28,15 @@
 /* Links inside the dropdown */
 .dropdown-content a {
   color: white;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 0px 36px;
   text-decoration: none;
   display: block;
   cursor: pointer;
+  max-width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
 }
 
 /* Change color of dropdown links on hover */

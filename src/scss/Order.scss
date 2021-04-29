@@ -1,3 +1,4 @@
+$mainGreyColor: #5d5e5f;
 .form * {
   outline: none;
 }
@@ -16,12 +17,13 @@
 .form {
   /* .form__body */
   max-width: 550px;
-
+  min-height: 500px;
+  border-radius: 0.25rem;
   margin: 0px auto;
   color: #fff;
-  background-color: rgba(79, 76, 76, 0.517);
+  background-color: $mainGreyColor;
   padding: 30px 30px;
-
+  box-shadow: var(--lightShadow);
   /* .form__title */
   &__title {
     font-size: 40px;

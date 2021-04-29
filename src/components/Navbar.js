@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo2 from "../logoSun.png";
+import logo2 from "../img-main/logoSun.png";
 
 export default function Navbar() {
   return (
@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link to="/about">Про нас</Link>
           </li>
           <li>
-            <Link to="/works">Наші роботи</Link>
+            <Link to="/work">Наші проекти</Link>
           </li>
           <li>
             <Link to="/order">Замовлення</Link>

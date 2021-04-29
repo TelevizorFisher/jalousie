@@ -4,18 +4,19 @@ $md1: $mw + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
-
+$mainColor: #ff6200;
+$mainGreyColor: #5d5e5f;
 .header {
   &__menu {
     padding: 0 0 0 3.15789%;
     flex: 1 1 auto;
+
     @media (max-width: $md3+px) {
       padding: 0;
     }
   }
 }
 .menu {
-
   &__list {
     display: flex;
     justify-content: flex-end;
@@ -24,37 +25,10 @@ $md4: 479.98;
       justify-content: space-between;
     }
   }
-  &__phone {
-    margin: 0px 5px 0px 5px;
-    display: none;
-    height: 15px;
-    width: 15px;
-    margin-top: 9px;
-    background: url("../HeaderInfo/img/phone_24px.svg") left no-repeat;
-    background-size: contain;
-    @media (max-width: 600px) {
-      display: block;
-    }
-  }
-  &__clock {
-    margin: 0px 5px 0px 5px;
-    display: none;
-    height: 15px;
-    width: 15px;
-    margin-top: 9px;
-    background: url("../HeaderInfo/img/access_time_24px.svg") left no-repeat;
-    background-size: contain;
-    @media (max-width: $md2+px) {
-      display: block;
-    }
-    @media (max-width: 390px) {
-      display: none;
-    }
-  }
   &__link-1 {
     display: flex;
     align-items: center;
-    margin: 0px 32px 0px 32px;
+    margin: 0px 32px 0px 0px;
     max-width: 200px;
     position: relative;
     padding: 0px 0px 0px 30px;
@@ -88,34 +62,71 @@ $md4: 479.98;
 .goto-block {
   white-space: nowrap;
   position: relative;
-  background: #f2726f;
-  border-radius: 8px;
-  padding: 4px 18px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #fff;
+  border-radius: 8px;
+  padding: 3px 13px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgb(230, 150, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 150, 6, 0.9856092095041141) 0%,
+    rgba(255, 61, 0, 1) 100%
+  );
   @media (max-width: $md3+px) {
-    padding: 10px 15px;
+    padding: 3px 10px;
   }
   @media (max-width: 360px) {
-    padding: 7px;
+    padding: 2px 9px;
   }
   &:hover {
-    background: #f8828a;
+    cursor: pointer;
+    background: rgb(230, 150, 6);
+    background: linear-gradient(
+      90deg,
+      rgba(228, 157, 25, 0.986) 0%,
+      rgb(255, 94, 0) 100%
+    );
     box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2),
       0px 8px 16px rgba(38, 38, 38, 0.24);
   }
 }
 .__goto-block {
-  background: url("../HeaderInfo/img/access_time_24px.svg") left no-repeat;
-  height: 24px;
+  padding: 0px -5px 0px 0px;
+  background: url("../img-main/img-header/clock.png") left no-repeat;
+  height: 30px;
   background-size: contain;
   @media (max-width: $md2+px) {
     display: none;
   }
 }
 ._goto-block {
+  padding: 0px -5px 0px 0px;
   height: 24px;
-  background: url("../HeaderInfo/img/phone_24px.svg") left no-repeat;
+  background: url("../img-main/img-header/phone.png") left no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+/* icons stule , сами иконки в футере */
+.list-icon-header {
+  display: flex;
+
+  align-items: center;
+
+  span {
+    width: 25px;
+    height: 25px;
+    margin: 0px 0px 0px 20px;
+    background-size: cover;
+    display: inline-block;
+    cursor: pointer;
+
+    filter: invert(51%) sepia(105%) saturate(3000%) hue-rotate(367deg)
+      brightness(119%) contrast(99%);
+  }
+  span:first-child {
+    margin: 0px 0px 0px 40px;
+  }
+  span:last-child {
+    margin: 0px 40px 0px 15px;
+  }
 }

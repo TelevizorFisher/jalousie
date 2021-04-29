@@ -4,9 +4,11 @@ import Tabs from "../components/Tabs/Tabs";
 
 export default function About() {
   return (
-    <section className="section about-section">
-      <h1 className="section-title">Про нас</h1>
-		<Tabs/>
+    <div className="container">
+      <div className="title">
+        <span>Про нас</span>
+      </div>
+      <Tabs />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
         repudiandae architecto qui adipisci in officiis, aperiam sequi atque
@@ -15,6 +17,6 @@ export default function About() {
         hic aspernatur error blanditiis?
       </p>
       <Phone />
-    </section>
+    </div>
   );
 }

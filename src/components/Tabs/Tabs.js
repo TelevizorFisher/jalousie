@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import data from "./data";
+import data from "./dataTabs";
 import SingleQuestion from "./Question";
-import "./tabs.css";
+import "../../scss/Tabs.scss";
 
 function Tabs() {
   const [questions, setQuestions] = useState(data);
   return (
     <div>
       <div className="container-grid">
-        <h3>Запитання і відповіді про нашу компанію:</h3>
+        <div>Запитання і відповіді про нашу компанію:</div>
         <section className="info">
           {questions.map((question) => {
             return (
